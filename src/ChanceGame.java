@@ -1,6 +1,5 @@
 
 
-
 public class ChanceGame {
     int winningDoor = doorChoose();
     int playerChoice;
@@ -128,9 +127,7 @@ public class ChanceGame {
         }
         return 38;
     }
-    public void setPlayerChoice(int playerChoice) {
-        this.playerChoice = playerChoice;
-    }
+
 
 
     public int getWinningDoor() {
