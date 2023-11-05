@@ -1,8 +1,7 @@
 
-import java.sql.PseudoColumnUsage;
+
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class ChanceGameRunner {
     public static void main(String[] args) {
@@ -20,8 +19,8 @@ public class ChanceGameRunner {
             System.out.println("Guess switched from to " + firstGuess + " to " + lucki.doorSwitch());
         }
         //System.out.print("The car is behind door " + lucki.getWinningDoor() + " ");
-        int test = lucki.getPlayerChoice();
-        System.out.println(test);
+        //int test = lucki.getPlayerChoice();
+        //System.out.println(test);
         if (lucki.isWin(lucki.getPlayerChoice())) {
             System.out.println("You won the car!");
         }else {

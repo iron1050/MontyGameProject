@@ -1,12 +1,10 @@
 
-import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class ChanceGame {
     int winningDoor = doorChoose();
     int playerChoice;
 
-    ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3));
 
 
 
@@ -121,12 +119,12 @@ public class ChanceGame {
             return 1;
         }
         if (playerChoice == 3 && winningDoor == 3) {
-            int threeTime = (int) ((Math.random() * 2) + 2);
-            if (threeTime == 2) {
-                return 2;
+            int threeTime = (int) ((Math.random() * 2) + 1);
+            if (threeTime == 1) {
+                return 1;
             }
-            if (threeTime == 3)
-                return 3;
+            if (threeTime == 2)
+                return 2;
         }
         return 38;
     }
@@ -134,9 +132,6 @@ public class ChanceGame {
         this.playerChoice = playerChoice;
     }
 
-   public ArrayList<Integer> getNumbers() {
-        return numbers;
-   }
 
     public int getWinningDoor() {
         return winningDoor;
